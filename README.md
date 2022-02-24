@@ -13,15 +13,17 @@ Helps to collate cost of grab rides
 python3 run.py ~/Documents/admin/transport/grab/receipts
 ```
 
+```
 Output:
-• $16.30 on 24 February 2022
-• $22.30 on 23 February 2022
-• $24.30 on 18 February 2022
-• $28.30 on 14 February 2022
-• $21.30 on 17 February 2022
-• $22.30 on 16 February 2022
+• $28.30 on 2022-02-14
+• $22.30 on 2022-02-16
+• $21.30 on 2022-02-17
+• $24.30 on 2022-02-18
+• $22.30 on 2022-02-23
+• $16.30 on 2022-02-24
 
 --------------------------------------------------------------------------------
 Budget: $160.00
 Total spent: $134.80
 Total left: $25.20
+```
