@@ -2,6 +2,10 @@
 
 Helps to collate cost of grab rides
 
+## Install
+
+`pip3 install extract_msg` (for reading of Outlook email .msg files)
+
 ## Usage
 
 1. Drag e-receipts emails from Outlook into a folder in File Explorer
