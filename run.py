@@ -11,6 +11,8 @@ args = ap.parse_args()
 grab_dir = Path(args.dir)
 
 total_spent = 0
+
+spend_list = []
 for grabfile in grab_dir.glob("*.msg"):
     msg = extract_msg.Message(grabfile)
     if "@grab.com" in msg.sender and "Your Grab E-Receipt" in msg.subject:
@@ -19,8 +21,11 @@ for grabfile in grab_dir.glob("*.msg"):
         dt = parse(date_str, fuzzy=True)
         price = rest.split('Total Paid')[-1].split('\n')[0]
         price = float(price.strip())
-        print(f"\u2022 ${price:0.2f} on {date_str}")
         total_spent += price
+        spend_list.append((dt, price))
+
+for date, pri in sorted(spend_list):
+    print(f"\u2022 ${pri:0.2f} on {date.date()}")
 
 
 balance = args.budget - total_spent
