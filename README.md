@@ -4,8 +4,8 @@ Helps to collate cost of grab rides
 
 ## Usage
 
-1. Drag e-receipts emails from outlook into File Explorer
-2.  `python3 run.py <filepath of folder containing .msg e-receipts>
+1. Drag e-receipts emails from Outlook into a folder in File Explorer
+2.  `python3 run.py <filepath of folder containing e-receipts emails (*.msg)>
 
 ## Example 
 
